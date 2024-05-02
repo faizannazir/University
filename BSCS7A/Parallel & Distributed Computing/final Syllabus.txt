@@ -1,0 +1,68 @@
+Chap 4:
+1-One to all broadcast and all to one reduction:
+https://youtu.be/fsllCdhWQYc
+
+https://youtu.be/Nhpskj0jgX8
+
+2-All to all broadcast and reduction:
+https://youtu.be/_HQPf7MoYDg
+
+https://youtu.be/m4HLx2oRrgU
+ 
+3-All reduce:
+https://youtu.be/nLipVoZTDCc
+ 
+4-Prefix sum operation:
+https://youtu.be/EGe4GrMAukE
+
+5-Scatter and gather:
+https://youtu.be/a2hTxkp8mcY
+
+https://youtu.be/YEX4GX_EKto
+
+6-All to all personalized communication:
+https://youtu.be/16JDeAAocu8
+
+https://youtu.be/u8RmQ2oAEJI
+
+https://youtu.be/XFS8t9cNoAg
+
+https://youtu.be/UJmCjAUncBI
+
+7-Circular shift:
+https://youtu.be/wYBEQv9Owig
+ 
+8-improving speed of some communication operation
+https://youtu.be/w9RpEYDo7Hw
+
+
+
+chapter 3
+
+part 1: https://youtu.be/d4RbwlFJx60
+part 2: https://youtu.be/d5kamu2Mk0M
+part 3:https://www.youtube.com/watch?v=SUBTVBzCqOw&t=358s
+part 4: https://youtu.be/Xou32Th2Eos
+parrt 5: https://www.youtube.com/watch?v=DgFLnndhHn8&t=93s
+
+
+
+
+
+chapter 9
+Quick sort
+https://youtu.be/re9ytVtt5zg
+parallel quick sort
+Link 1 https://youtu.be/UO5cQ5G9DFI
+
+Link 2 https://youtu.be/TBzrPxADh5g
+
+Bubble sort
+https://youtu.be/tWCaFVJMUi8
+parallel Bubble sort
+https://www.youtube.com/watch?v=Sazh4Y-WlDk
+
+
+Bucket sort
+https://youtu.be/E9OccfF9mpI
+https://youtu.be/VuXbEb5ywrU

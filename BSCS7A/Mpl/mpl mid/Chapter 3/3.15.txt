@@ -1,0 +1,71 @@
+(Date Class) Create a class called Date that includes three instance variables—a month (type
+int), a day (type int) and a year (type int). Provide a constructor that initializes the three 
+instance variables and assumes that the values provided are correct. Provide a set and a get 
+method for each instance variable. Provide a method displayDate that displays the month, day 
+and year separated by forward slashes (/). Write a test application named DateTest that 
+demonstrates class Date’s capabilities.
+
+//filename: Date.java
+// Date class
+public class Date {
+private int month;
+private int day;
+private int year;
+public Date(int myMonth,int myDay, int myYear) {
+
+month = myMonth;
+day = myDay;
+year = myYear;
+}
+
+public void setMonthDate(int myMonth) {
+month = myMonth;
+}
+
+public int getMonthDate() {
+return month;
+}
+
+public void setDayDate(int myDay) {
+day = myDay;
+}
+
+public int getDayDate() {
+return month;
+}
+
+public void setYearDate(int myYear) {
+year = myYear;
+}
+
+public int getYearDate() {
+return year;
+}
+
+public void displayDate() {
+System.out.printf(“%d/%d/%d”, month,day,year);
+}
+}
+//filename: DateTest.java
+// Date testing class with the main() method
+import java.util.*;
+public class DateTest {
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+Date myDate = new Date(9, 11, 1986);
+
+System.out.println(“Enter The Month”);
+int myMonth = input.nextInt();
+myDate.setMonthDate(myMonth);
+
+System.out.println(“Enter the Date”);
+int myDay = input.nextInt();
+myDate.setDayDate(myDay);
+
+System.out.println(“Enter the Year”);
+int myYear = input.nextInt();
+myDate.setYearDate(myYear);
+myDate.displayDate();
+}
+}
+

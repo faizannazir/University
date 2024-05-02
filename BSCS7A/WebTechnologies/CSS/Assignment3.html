@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+
+        h1
+        {
+            margin: 10px;
+        }       
+         /* CSS COLOR  */
+        .color .red
+        {
+            color: red;
+        }
+        .color .green
+        {
+            color: #0f0;   
+        }
+        .color .blue
+        {
+            color: rgb(0, 0,255);
+        }
+
+        /* CSS Background */
+        .background .bgimg
+        {
+            background-image: url('https://media.licdn.com/dms/image/D4D35AQFLo21RpSgkSg/profile-framedphoto-shrink_400_400/0/1624017738584?e=1673028000&v=beta&t=vtO9pNBAJKRFyejeN7KYGtdykCz1xsP3ixtPCP5769Y');
+            background-size:contain;
+            background-position: center;
+        }
+        .background .bgcolor
+        {
+            background: red;
+        }
+
+        /* CSS Border */
+        .border .border-1
+        {
+            border: 1px solid ;
+        }
+        .border .border-2
+        {
+            border: 2px solid;
+        }
+        .border .border-r
+        {
+            border: 2px solid;
+            border-radius: 15px;
+        }
+
+        /* CSS Margin */
+        .margin .mn-2
+        {
+            margin-top: 2px;
+            margin-right: 2px;
+            margin-bottom: 2px;
+            margin-left: 2px;
+            /* margin: 2px;  all margin */
+        }
+        .margin .mn-5
+        {
+            margin: 5px 5px; /* first for top and bottom 2nd for left and right */
+        }
+         /* CSS Padding*/ 
+        .padding #pg-2
+        {
+            background-color: gray;
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+            /* Padding: 2px;  all Padding */
+        }
+        .padding #pg-5
+        {
+            background-color: gray;
+            padding: 5px 5px; /* first for top and bottom 2nd for left and right */
+        }
+
+        /* CSS Text */
+        .text .text
+        {
+            font-style: italic;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        /* CSS Font */
+
+        .font .arial
+        {
+            font-family: Arial;
+        }
+        .font .serif
+        {
+            font-family: sans-serif;
+        }
+
+        /* CSS Links */
+        .links .link
+        {
+            text-decoration: none;
+            color: green;
+        }
+
+        /* CSS List */
+        .list ol
+        {
+            /* list-style:circle; */
+            list-style-position: inside;
+            list-style-type: decimal-leading-zero;
+        }
+
+        /* CSS Table */
+        .table table,td,th
+        {
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+
+        /* CSS Display */
+
+        .display .block
+        {
+            display: block;
+        }
+        .display .inline
+        {
+            display: inline;
+        }
+        .display .i-block
+        {
+            display: inline-block;
+        }
+        
+        /* CSS Possition */
+
+        .possition .fixed
+        {
+            /* position: static;
+            position: relative;
+            position: absolute;
+            position: sticky; */
+            position: fixed;
+        }
+
+        /* CSS FLOAT */
+
+        .float .left
+        {
+            float: left;
+        }
+
+        /* CSS Align */
+        .align .center
+        {
+            text-align: center;
+        }
+
+        /* CSS Form */
+        .form form
+        {
+            background-color: green;
+            text-align: center;
+            width: 250px;
+            
+        }
+        .form form label,input
+        {
+            font-weight: 900;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center">FAIZAN NAZIR 19-ARID-5157</h1>
+
+<div class="color">
+<h1>CSS Color Property</h1>
+<p class="red"> Red color </p>
+<p class="green"> Green Color </p>
+<p class="blue"> Blue Color </p>
+</div>
+
+<div class="background">
+<h1> CSS Backgrounds </h1>
+<div class="bgimg">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda incidunt veritatis praesentium delectus dolore voluptatibus consectetur aperiam eius, est optio aspernatur aliquid commodi et laudantium sequi, beatae, quasi vitae perferendis.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laborum ullam optio iure quis adipisci doloremque repudiandae, architecto excepturi pariatur corporis magni eligendi natus? Libero dolores assumenda quasi inventore rem?</p>
+</div>
+<div class="bgcolor">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatem hic quibusdam provident! Delectus est laborum quidem quas maiores repellendus ex nostrum necessitatibus, explicabo, placeat rem, eius commodi eaque dolore.</p>
+</div>
+</div>
+
+<div class="border">
+    <h1>CSS Borders </h1>
+    <p class="border-1"> 1px Boreder </p>
+    <p class="border-2">2px Border</p>
+    <p class="border-r">Border radius</p>
+</div>
+
+<div class="margin">
+<h1>CSS Margins</h1>
+<p class="mn-2">2px Margin Applyed</p>
+<p class="mn-5"> 5px Margin Applyed</p>
+</div>
+
+<div class="padding">
+    <h1> CSS Padding </h1>
+    <p id="pg-2">2px Padding applyed</p>
+    <p id="pg-5">5px Padding applyed</p>
+</div>
+
+<div class="text">
+    <h1>CSS Text</h1>
+    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore animi velit, eligendi amet ratione at, magni, maxime dolor blanditiis ipsa quo quod omnis facilis eos ipsum cum harum aspernatur quidem.</p>
+</div>
+
+<div class="font">
+<h1>CSS Fonts</h1>
+<p class="arial">Arial Font</p>
+<p class="serif">Sans-Serif</p>
+</div>
+
+<div class="links">
+    <h1>CSS Links</h1>
+    <a href="#" class="link">HOME</a>
+</div>
+
+
+
+<div class="list">
+    <h1>CSS Lists</h1>
+<ol>
+    <li>CSS</li>
+    <li>HTML</li>
+    <li>JAVASCRIPT</li>
+</ol>
+</div>
+<div class="table">
+   <h1>CSS Tables</h1> 
+    <table>
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CSS</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+
+<div class="display">
+ <h1>CSS Display</h1>
+<p class="block"> Block </p> 
+<p class="inline">Inline</p>  
+<p class="i-block">Inline Block </p>
+</div>
+
+<div class="position">
+  <h1>CSS Position</h1>
+<p class="fixed"> Fixed Position</p>  
+</div>
+
+<div class="float">
+ <h1>CSS Float</h1>
+    <img class="left" src="https://media.licdn.com/dms/image/D4D35AQFLo21RpSgkSg/profile-framedphoto-shrink_400_400/0/1624017738584?e=1673028000&v=beta&t=vtO9pNBAJKRFyejeN7KYGtdykCz1xsP3ixtPCP5769Y" alt="" width="150">
+    <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem sequi illo iusto, itaque aspernatur reprehenderit debitis accusamus, cupiditate, est esse nobis quod quibusdam rem. Iusto provident tenetur rerum libero.</p>
+</div>
+<br> <br>
+<div class="align">
+    <h1>CSS Align</h1>
+  <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid odio cupiditate, repellendus error aliquam perspiciatis omnis magnam officiis dicta.
+</p>  
+</div>
+
+
+<div class="form">
+<h1>CSS Form</h1>
+<form action="">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <label for="name">Name:</label>
+    <input type="text" name="aridno" id="no">
+</form>
+
+</div>
+
+</body>
+</html>

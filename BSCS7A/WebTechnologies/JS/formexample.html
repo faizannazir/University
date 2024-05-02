@@ -1,0 +1,156 @@
+<html>    
+   <head>  <title>Form Validation</title>       
+  <script> 
+    function validate()  
+{ 
+        if( document.myForm.Name.value == "" ) // For Empty Field 
+ { 
+            alert( "Please provide your name!" ); 
+            document.myForm.Name.focus() ; 
+            return false; 
+         } 
+ if(!isAlpha())  // Nested Function for only character input 
+ { 
+ alert( "Please provide Valid name!" ); 
+ document.myForm.Name.focus() ; 
+            return false; 
+ } 
+ if( document.myForm.Name.value.length <3 ) // For Min Length 
+ { 
+            alert( "Name length must be at least 3 characters!" ); 
+            document.myForm.Name.focus() ; 
+            return false; 
+         } 
+  var password = document.myForm.password.value;   
+        var confirmPassword = document.myForm.confirmPassword.value;  
+      if(password == "") // For Empty Field 
+{   
+      alert( "Please provide Password!" ); 
+ document.myForm.password.focus() ;  
+      return false;   
+     }    
+ if(password.length<8)  //For Max Length 
+ { 
+ alert("Password length must be atleast 8 characters"); 
+ return false;   
+ }  
+  if(password.length>15) 
+ { 
+ alert("Password length must not exceed 15 characters"); 
+ return false;   
+ }  
+  if(confirmPassword == "") // For Empty Field  
+ {   
+      alert( "Please provide Confirm Password!" );  
+ document.myForm.confirmPassword.focus() ;  
+        return false;   
+     }   
+ if(password != confirmPassword) // For Matching input of Field 
+ { 
+ alert("Password and Confirm Password are not same"); 
+ return false;   
+ }  
+     
+       if( document.myForm.Email.value == "" ) // For Empty Field 
+{ 
+            alert( "Please provide your Email!" ); 
+            document.myForm.Email.focus() ; 
+            return false; 
+         } 
+ if(!validateEmail()) //Nested Function for Format of Email 
+{ 
+ alert("Please enter correct email ID") 
+            document.myForm.Email.focus() ; 
+   return false; 
+}  
+if(!(document.myForm.gender[0].checked) && !(document.myForm.gender[1].checked) ) //For Empty 
+Field(Radio , Button) 
+{ 
+ alert("Please Select Gender") 
+   return false; 
+           
+}  
+         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) || 
+            document.myForm.Zip.value.length != 5 ) //For Empty Field, Format and Length of Field 
+ { 
+             
+            alert( "Please provide a valide zip code in the format #####." ); 
+            document.myForm.Zip.focus() ; 
+            return false; 
+         } 
+         if( document.myForm.Country.value == "-1" ) //For Empty Field(Dropdown) 
+{ 
+            alert( "Please provide your country!" ); 
+            return false; 
+         } 
+ alert( "Form Data Validated Successfully!" ); 
+         return true ; 
+} 
+function validateEmail() // For Email Format 
+ { 
+         var emailID = document.myForm.Email.value; 
+         atPosition = emailID.indexOf("@"); 
+         dotPosition = emailID.lastIndexOf(".");  
+         if (atPosition < 1 || ( dotPosition- atPosition < 2 )) 
+ {    
+            return false; 
+         } 
+         return true ; 
+      } 
+function isAlpha() //For Function Character Input Name 
+{  
+ let name= document.myForm.Name.value; 
+        for (let i = 0; i < name.length; i++) { 
+            let ch = name.charAt(i); 
+            if (!(ch >= 'A' && ch <= 'Z') && !(ch >= 'a' && ch <= 'z')) { 
+                return false; 
+            } 
+        } 
+        return true; 
+    } 
+      </script> </head> <body> 
+      <form name = "myForm" onsubmit = "return(validate())"> 
+         <table cellspacing = "2" cellpadding = "2" border = "1"> 
+            <tr> 
+               <td align = "right">Name</td> 
+               <td><input type = "text" name = "Name" /></td> 
+            </tr> 
+             <tr> 
+               <td align="right">Password</td> 
+               <td><input type="password" name="password" /></td> 
+            </tr> 
+ <tr> 
+               <td align="right">Confirm Password</td> 
+               <td><input type="password" name="confirmPassword" /></td> 
+            </tr> 
+            <tr> 
+               <td align = "right">Email</td> 
+               <td><input type = "text" name = "Email" /></td> 
+            </tr> 
+            <tr> 
+               <td align = "right">Gender</td> 
+               <td> 
+ <input type = "radio" name = "gender" />Male 
+ <input type = "radio" name = "gender" />Female 
+ </td> 
+            </tr> 
+            <tr> 
+               <td align = "right">Zip Code</td> 
+               <td><input type = "text" name = "Zip" /></td> 
+            </tr> 
+            <tr> 
+               <td align = "right">Country</td> 
+               <td> 
+                  <select name = "Country"> 
+                     <option value = "-1" selected>[choose Country]</option> 
+                     <option value = "1">Pakistan</option> 
+                     <option value = "2">USA</option> 
+                     <option value = "3">UK</option> 
+                  </select> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td align = "right"></td> 
+               <td><input type = "submit" value = "Submit" /></td> 
+            </tr>        
+         </table></form> </body></html>

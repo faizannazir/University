@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizan Nazir 19-ARID-5157</title>
+    <style>
+
+        body {
+            margin: 0px;
+        }
+        nav {
+            background-color: black;
+            color: fff;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            flex: 1;
+            text-align: center;
+            border-right: 1px solid silver;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px 0;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: none;
+        }
+
+        #menu:hover+ul {
+            display: flex;
+        }
+
+        .header {
+            background-color: Black;
+            color: white;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        button {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .main {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            margin: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            background-color: black;
+            color: white;
+
+        }
+
+        footer>a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        @media (max-width: 600px) {
+
+            /* styles for mobile devices go here */
+            .main {
+                display: block;
+            }
+            nav ul
+            {
+                display: block;
+            }
+            nav ul {
+            display: none;
+        }
+
+        #menu:hover+ul {
+            display: block;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <img src="menu.png" alt="Menu" id="menu" width="30">
+        <ul>
+            <li> <a href="#" class="Home">Home</a> </li>
+            <li><a href="#" class="Review" style="margin-left: 5px;">Review</a></li>
+            <li><a href="#" class="Aboutus" style="margin-left: 5px;">Aboutus</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <br>
+        <h4>BEAUTIFUL RESPONSIVE DESIGN</h4>
+        <h1>BUILT WITH W3.CSS</h1>
+        <button>Learn W3.css</button>
+        <br>
+    </div>
+    <div class="main">
+        <div id="1" style=" border: 2px solid silver;">
+            <h3>Responsive </h3>
+            <img src="HTML.png" alt="HTML" width="90px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laborum non natus minus iure at itaque
+                nulla culpa corrupti ea!</p>
+        </div>
+        <div id="2" style="border: 2px solid silver;">
+            <h3> Standard CSS </h3>
+            <img src="CSS.png" alt="CSS" width="90px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laborum non natus minus iure at itaque
+                nulla culpa corrupti ea!</p>
+        </div>
+        <div id="3" style="border: 2px solid silver;">
+            <h3> Design </h3>
+            <img src="Responsive.png" alt="" width="90px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laborum non natus minus iure at itaque
+                nulla culpa corrupti ea!</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="#" class="Home">Home</a>
+        <a href="#" class="Review" style="margin-left: 5px;">Review</a>
+        <a href="#" class="Aboutus" style="margin-left: 5px;">Aboutus</a>
+        <br>
+        &copy; Faizan Nazir 2022
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <!-- <div style="margin: 0% auto;">
+        <h1> This is H1 heading</h1>
+        <p>
+            this is a  paragraph
+        </p>
+        
+    </div>
+    <div>
+       <img src="HTML.png" alt="" width="250px" style="float: right;" ><span style="float: right;">click here</span>
+    <a href="www.google.com">Google</a>  
+    </div> 
+
+    <div>
+        <ol>
+            <li style="list-style:upper-alpha;">Hello</li>
+        </ol>
+        <ol>
+            <li style="list-style: lower-alpha;">Hello</li>
+        </ol>
+        
+        <ol>
+            <li style="list-style:decimal-leading-zero;">Hello</li>
+        </ol>
+        
+        <ol type="i">
+            <li style="list-style-type: disc;">Hello</li>
+            <li></li>
+        </ol>
+        
+    </div>
+
+    <div>
+        <ul>
+            <li>
+                Hello
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                Hello
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Hello
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Hello
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Hello
+            </li>
+        </ul>
+    </div>
+
+   <div>
+    <dl>
+    <dt>
+        hello
+    </dt>
+    <dd>hi </dd>
+    </dl>
+   </div> -->
+
+
+    <div>
+        <style>
+            table {
+                border-collapse: collapse;
+                padding: 20px;
+                border: 2px dashed;
+                border-radius: 8px;
+                margin: 0 auto;
+            }
+
+            td,
+            th {
+                border: 1px dotted;
+                padding: 20px;
+                border-color: red;
+
+            }
+
+            .form {
+                margin: 50px auto;
+                color: white;
+
+            }
+
+            .form form {
+                margin: 0 auto;
+                padding: 30px;
+                background-color: wheat;
+                width: max-content;
+                background-image: url("CSS.png");
+                background-position: center;
+
+            }
+
+            .form form label {
+
+                background-image: url("CSS.png");
+                padding: 10px;
+
+                color: #6666aa;
+
+            }
+
+            .form form input[type="text"],
+            input[type="email"] {
+                width: 200px;
+                height: 20px;
+                padding: 8px;
+                margin: 2px;
+            }
+
+            .form form input[type="submit"] {
+                width: 120px;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-left: 120px;
+                font-size: larger;
+                padding: 10px;
+                background-color: #444;
+                color: #ccc;
+            }
+
+            .form form .error {
+                position:static;
+                color: red;
+                /* padding-top: 20px; */
+                font-weight: bold;
+               
+            }
+
+            div {
+                margin-top: 15px;
+            }
+        </style>
+        <table>
+            <tr>
+                <th rowspan="3" colspan="2">Web</th>
+                <th rowspan="3" colspan="3">Technologies</th>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td colspan="2">Html</td>
+                <td>Css</td>
+                <td>JS</td>
+                <td>Responsive</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form">
+        <form action="" onsubmit="return validate()">
+            <div>
+                <label for="name">First Name:</label>
+                <input type="text" maxlength="12" minlength="3" id="name" name="name">
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" maxlength="12" minlength="3" id="lname" name="lname">
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female"> 
+                <label for="female">female</label>
+                <span class="error"></span>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script>
+        const name = document.getElementById("name");
+        const lname = document.getElementById("lname");
+        const error = document.getElementsByClassName("error");
+        const email = document.getElementById("email");
+        const male = document.getElementById("male")
+        const female = document.getElementById("female")
+
+
+        function validate() {
+            if (name.value == "") {
+                // alert("first name required ");
+                error[0].innerHTML = "first name required";
+                error[0].style="background-color:black";
+                name.classList
+                return false
+            }
+            if (lname.value == "") {
+                // alert("last name required ")
+                error[1].innerHtml = "last name required";
+                return false
+            }
+            if(email == "")
+            {
+                error[2].innerHTML = "email required"
+            }
+            if(!(male.checked) && !(female.checked) || (female.checked && male.checked))
+            {
+
+                e.classList.add("error")
+                error[3].innerHTML="error"
+                return false
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

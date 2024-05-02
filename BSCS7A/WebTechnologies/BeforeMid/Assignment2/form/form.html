@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form div {
+            background-color: rgb(185, 207, 106);
+            height: 40px;
+            align-items: center;
+            margin-bottom: 1%;
+            margin-top: 0.5%;
+            border: 1px white solid;
+            border-radius: 10px;
+        }
+        input ,label
+        {
+            margin-top: 10px;
+        }
+        label
+        {
+            margin-left: 10px;
+        }
+
+        html,
+        body,
+        h1,
+        form,
+        fieldset,
+        legend {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #ffffff;
+            color: #111111;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            padding: 20px;
+        }
+
+        form {
+            background: #9cbc2c;
+            border-radius: 5px;
+            padding: 20px;
+            width: 400px;
+        }
+
+        form fieldset {
+            border: none;
+            margin-bottom: 10px;
+        }
+
+
+        form legend {
+            color: #384313;
+            font-size: 16px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            text-shadow: 0 1px 1px #c0d576;
+        }
+
+        form label {
+            float: left;
+            font-size: 13px;
+            width: 110px;
+        }
+
+
+        form fieldset fieldset label:hover {
+            cursor: pointer;
+        }
+
+        form input:not([type=radio]),
+        form textarea {
+            background: #ffffff;
+            border: none;
+            border-radius: 3px;
+            font: italic 13px Georgia, "Times New Roman", Times, serif;
+            outline: none;
+            padding: 5px;
+            width: 200px;
+        }
+textarea
+{
+    margin-right: 50px;
+    height: 20px;
+    margin-top: 10px;
+}
+        form button {
+            background: #384313;
+            border: none;
+            border-radius: 20px;
+            color: #ffffff;
+            display: block;
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            letter-spacing: 1px;
+            margin: auto;
+            padding: 7px 25px;
+            text-shadow: 0 1px 1px #000000;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body style="align-items: centers;">
+
+    <form>
+        <fieldset>
+            <legend>Step1: Your details</legend>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="First and last name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="example@domain.com">
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="Eg. +447500000000">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Step2: Delivery address</legend>
+            <div>
+                <label for="address" >Address</label>
+                <textarea name="address" id="address" cols="17" rows="2" style="float:right"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode">
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <input type="text" id="country">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Step3: Card details</legend>
+            <div style="align-items: center;text-align: center;">
+            <legend style="float: left; font-size: 16px; margin-top: 5px;margin-left: 5px;">Card type</legend>
+                <input type="radio" name="cardtype" id="cardtype"><img src="visa.png" alt="" width="10px" height="10px">
+                VISA
+                <input type="radio" name="cardtype" id="cardtype"><img src="amex.png" alt="" width="10px" height="10px">
+                AmEx
+                <input type="radio" name="cardtype" id="cardtype"><img src="master.png" alt="" width="10px"
+                    height="10px">
+                Mastercard
+                <br>
+            </div>
+            
+            <div>
+				<label for=cardnumber>Card number</label>
+				<input id=cardnumber name=cardnumber type=number required>
+			</div>
+			<div>
+				<label for=secure>Security code</label>
+				<input id=secure name=secure type=number required>
+            </div>
+			<div>
+				<label for=namecard>Name on card</label>
+				<input id=namecard name=namecard type=text placeholder="Exact name as on the card" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <button type=submit>Buy it!</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

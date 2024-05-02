@@ -1,0 +1,64 @@
+.game
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 50px 0px 50px;
+}
+img
+{
+    cursor: pointer;
+    margin: 50px;
+}
+.score
+{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table, td , th
+{
+    border: 2px solid ;
+    border-collapse: collapse;
+    width: 350px;
+    margin: 50px;
+}
+
+#reset
+{
+    width: 120px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.results
+{
+    text-align: center;
+}
+h3
+{
+    display: inline-block;
+}
+
+@media (max-width:600px) 
+{
+    .game
+    {
+        flex-direction: column;
+        margin: 50px;
+    }
+    img
+    {
+        margin: 50px;
+    }
+    
+    .score
+    {
+        flex-direction: column;
+    }
+}

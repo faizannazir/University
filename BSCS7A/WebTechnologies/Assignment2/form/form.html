@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p {
+            background-color: rgb(185, 207, 106);
+        height: 40px;
+        align-items: center;
+        margin: 0 10px;
+        margin-bottom: 5px;
+        border: 1px white solid;
+        border-radius: 5px;
+        }
+        body {
+	background: #ffffff;
+	color: #111111;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 50%;
+}
+    </style>
+</head>
+
+<body style="text-align: centers;">
+    <div style="background-color: rgb(156, 188, 44); width: 250px; align-content: center; border-radius: 1%;">
+
+        <form>
+            <h4>Step1: Your details</h4>
+            <div id="p">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="First and last name">
+            </div>
+            <div id="p">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="example@domain.com">
+            </div>
+            <div id="p">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="Eg. +447500000000">
+        </div>
+            <h4>Step2: Delivery address</h4>
+            <div id="p" style="height:fit-content; text-align:  center;">
+            <label for="address" style="float:left">Address</label>
+            <textarea name="address" id="address" cols="20" rows="3"></textarea>
+            </div>
+            <div id="p">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </div>
+            <div id="p">
+            <label for="country">Country</label>
+            <input type="text" id="country">
+        </div>
+            <br>
+
+            <h4>Step3: Card details</h4>
+            <label for="cardtype">Card type</label>
+            <br>
+            <input type="radio" name="cardtype" id="cardtype"><img src="visa.png" alt="" width="15px" height="10px">
+            VISA
+            <input type="radio" name="cardtype" id="cardtype"><img src="amex.png" alt="" width="15px" height="10px">
+            AmEx
+            <input type="radio" name="cardtype" id="cardtype"><img src="master.png" alt="" width="15px" height="10px">
+            Mastercard
+
+        </form>
+    </div>
+</body>
+
+</html>

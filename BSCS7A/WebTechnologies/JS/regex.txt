@@ -1,0 +1,9 @@
+faizan nazir
+
+. (period) - matches any single  character
+* - matches zero or more of the preceding character or group
++ - matches one or more of the preceding character or group
+? - matches zero or one of the preceding character or group
+{n} - matches exactly n of the preceding character or group
+{n,} - matches n or more of the preceding character or group
+{n,m} - matches between n and m of the preceding character or group

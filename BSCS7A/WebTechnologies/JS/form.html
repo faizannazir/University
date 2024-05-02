@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Validation</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<body>
+<div id="main">
+  <h1>NAME: FAIZAN NAZIR</h1> 
+  <h1>ARID NO:   19-ARID-5157</h1>
+  <h1>Assignment:   04</h1>
+
+
+    <form action="" method="post" onsubmit="return(validate())">
+        <caption>Registration Form</caption>
+        <div class="item" id="addressbox">
+          <label for="address">Address:</label>
+          <textarea name="address" id="address" cols="30"></textarea>
+        </div>
+        <div class="item">
+          <label for="father-name">Father Name:</label>
+          <input type="text" id="father-name"  >
+        </div>
+        <div class="item">
+          <label for="file-upload">Upload File/Image:</label>
+          <input type="file" id="file-upload" >
+        </div>
+        <div class="item">
+          <label for="dob">DOB:</label>
+          <input type="date" id="dob"  >
+        </div>
+        <div class="item">
+          <label for="qualification">Qualification:</label>
+          <select id="qualification"  >
+            <option value="ssc">SSC</option>
+            <option value="hssc">HSSC</option>
+            <option value="bs">BS</option>
+            <option value="ms">MS</option>
+            <option value="phd">PHD</option>
+          </select>
+        </div>
+        <div class="item">
+          <label for="institute">Institute/Board:</label>
+          <input type="text" id="institute"  >
+        </div>
+        <div class="item">
+          <label for="passing-year">Passing Year:</label>
+          <input type="text" id="passing-year"  >
+        </div>
+        <div class="item">
+          <label for="percentage">Percentage:</label>
+          <input type="number" id="percentage" min="0" max="100"> <b>%</b>
+        </div>
+        <div class="item" id="hobbies">
+          <label>Hobbies:</label>
+          <input type="checkbox" id="reading" value="reading"  >
+          <label for="reading">Reading</label>
+          <input type="checkbox" id="traveling" value="traveling">
+          <label for="traveling">Traveling</label>
+          <input type="checkbox" id="sketching" value="sketching">
+          <label for="sketching">Sketching</label>
+        </div>
+        <div class="item">
+          <label for="zip-code">Zip Code:</label>
+          <input type="text" id="zip-code" >
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+</div>      
+</body>
+</html>

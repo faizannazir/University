@@ -1,0 +1,66 @@
+{% extends 'attendance_app/base.html' %}
+
+{% load static %}
+
+{% block title %}
+<title>Dashboard</title>
+{% endblock %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'attendance_app/admin/css/home.css' %}">
+
+{% endblock %}
+
+
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="buttons">
+                <a href="{% url 'attendance' %}">View Attendance</a>
+                 <a href="{% url 'register' %}">Add Employee </a> 
+            </div>
+            <div class="employees">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="7">Employees </th>
+                        </tr>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Date Of Birth</th>
+                            <th>Joining Date</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for employee in employees %}
+                        <tr>
+                            <td>{{ employee.id}}</td>
+                            <td>{{ employee.user.username }}</td>
+                            <td>{{ employee.department}}</td>
+                            <td>{{ employee.date_of_birth }}</td>
+                            <td>{{ employee.joining_date }}</td>
+                            <td> <a href="{% url 'employee_update' employee.id %}">Edit</a></td>
+                            <td><a href="{% url 'delete' employee.user.id %}">Delete</a> </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="7">No Employee </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
